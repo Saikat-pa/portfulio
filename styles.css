@@ -258,6 +258,21 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 1.5s;
+}
+
+.submit-feedback {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d1d5db;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.submit-feedback.success {
+    opacity: 1;
+    color: #7ee787;
+}
     transition: all .3s ease;
     cursor: pointer;
 }

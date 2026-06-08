@@ -71,7 +71,7 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
                     <div class="about-box">
                         <h3>Education</h3>
-                        <p style="margin-bottom: 0;"><strong>University</strong></p>
+                        <p style="margin-bottom: 0;"><strong>Southeast University</strong></p>
                         <p>B.Sc. in CSE, Batch 62</p>
                     </div>
                     <div class="about-box">
@@ -160,17 +160,18 @@
         <p>Have a project idea or want to work together? Send a message and I will reply soon.</p>
 
         <div class="contact-form">
-            <form>
+            <form id="contact-form">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                    <input type="text" placeholder="Full Name" required />
-                    <input type="email" placeholder="Email Address" required />
+                    <input type="text" name="name" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
                 </div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                    <input type="text" placeholder="Mobile Number" />
-                    <input type="text" placeholder="Email Subject" required />
+                    <input type="text" name="phone" placeholder="Mobile Number" />
+                    <input type="text" name="subject" placeholder="Email Subject" required />
                 </div>
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn-box" style="width: 100%; margin: 0; margin-top: 20px;">Submit Message</button>
+                <p id="submit-feedback" class="submit-feedback" aria-live="polite"></p>
             </form>
         </div>
     </section>

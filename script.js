@@ -29,3 +29,23 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Contact form submit feedback
+const contactForm = document.getElementById('contact-form');
+const submitFeedback = document.getElementById('submit-feedback');
+
+if (contactForm && submitFeedback) {
+    contactForm.addEventListener('submit', event => {
+        event.preventDefault();
+
+        submitFeedback.textContent = 'Submit successful. Thank you for your message!';
+        submitFeedback.classList.add('success');
+
+        contactForm.reset();
+
+        setTimeout(() => {
+            submitFeedback.textContent = '';
+            submitFeedback.classList.remove('success');
+        }, 5000);
+    });
+}
