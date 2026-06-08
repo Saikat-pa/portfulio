@@ -1,6 +1,6 @@
 // Typed.js for dynamic text
 const typed = new Typed('.text', {
-    strings: ['Frontend Developer', 'Full-Stack Developer', 'Web Designer', 'Cyber Security Enthusiast'],
+    strings: ['Frontend Web Developer', 'Full-Stack WeB Developer', 'Web Designer', 'Cyber Security Enthusiast'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
