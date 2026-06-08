@@ -1,0 +1,31 @@
+// Typed.js for dynamic text
+const typed = new Typed('.text', {
+    strings: ['Frontend Developer', 'Full-Stack Developer', 'Web Designer', 'Cyber Security Enthusiast'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+// Smooth scrolling and active link highlighting
+const navLinks = document.querySelectorAll('.navbar a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});
